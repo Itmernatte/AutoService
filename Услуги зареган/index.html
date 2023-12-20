@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Inter&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="modal-services" id="modal-services">
+        <div class="modal-services-container" id="modal-services-container">
+            <div class="main-head-block">
+                <span class="main-head-text">Запись на услугу</span>
+                <div class="main-head-hr-top"></div>
+                <div class="main-head-hr-bot"></div>
+            </div>
+            <input type="date" class="modal-authorization-date" id="modal-authorization-input" placeholder="Дата:">
+            <input type="services" class="modal-authorization-services" id="modal-authorization-input" placeholder="Услуги:">
+            <input type="master" class="modal-authorization-master" id="modal-authorization-input" placeholder="Мастер:">
+            <button class="modal-services-log-in">Записаться</button>
+        </div>
+    </div> 
+    <div class="bg_gon" id="bg_fon_reg">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Регистрация</h2>
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <input class="registration_password" type="password" name="" id="" placeholder="Пароль">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="modal-authorization" class="modal-authorization">
+            <div class="modal-authorization-container">
+                <span class="modal-authorization-head">Вход</span>
+                <input type="email" class="modal-authorization-email" id="modal-authorization-input"
+                    placeholder="Почта:">
+                <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                    placeholder="Пароль:">
+                <input type="checkbox" class="modal-authorization-checkbox">
+                <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+                <button onclick="close_modal_entrance()">НАЖМИ НА меня</button>
+                <button class="modal-authorization-log-in">Войти</button>
+                <button onclick="removee()" class="modal-authorization-create-account">Регистрация</button>
+                <a class="forgot-your-password" href="">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="header">
+            <div>
+                <a href="../Главная/index.html"><span class="header-logo-left">АВТО</span><span
+                        class="header-logo-right">СЕРВИС</span></a>
+            </div>
+            <div class="header-right">
+                <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">СЕРВИСЫ</button>
+                <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">КОНТАКТЫ</button>
+                <a href="../Личный кабинет/index.html"><img src="Group.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main-head-block">
+                <span class="main-head-text">Услуги автосервиса</span>
+                <div class="main-head-hr-top"></div>
+                <div class="main-head-hr-bot"></div>
+            </div>
+            <div class="services">
+                <div class="serveces-1line">
+                    <div class="services-block-diagnostic">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/диагностика.svg"
+                                style="width: 160px; height: 160px;">
+                            <span class="services-text">ДИАГНОСТИКА АВТО</span>
+                        </div>
+                        <div class="services-block-container-diagnostic-hover">
+                            <img class="services-ikons" src="images/диагностика.svg"
+                                style="width: 160px; height: 160px;">
+                            <span class="services-text">ДИАГНОСТИКА АВТО</span>
+                            <span class="services-comment">Узнаем все секреты, скрывающиеся в электронных блоках вашего автомобиля.</span>
+                            <span class="services-price">от 790 руб.</span>
+                            <button class="services-button" onclick="openservices()">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="services-block-catalyst">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/выхлоп.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">УДАЛЕНИЕ КАТАЛИЗАТОРА, УСТАНОВКА ПЛАМЕГАСИТЕЛЯ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-electro">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/электрик.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">АВТОЭЛЕКТРИК</span>
+                        </div>
+                    </div>
+                    <div class="services-block-oil">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/масло.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">ЗАМЕНА МАСЕЛ ДВС, КПП, АКПП, РЕДУКТОРОВ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="serveces-2line">
+                    <div class="services-block-engine">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/двс.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">РЕМОНТ ДВИГАТЕЛЯ </span>
+                        </div>
+                    </div>
+                    <div class="services-block-transmission">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/коропка.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">РЕМОНТ ТРАНСМИССИИ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-pendant">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/ходовая.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">РЕМОНТ ХОДОВОЙ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-collapse">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/развал.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">ЗD РЕГУЛИРОВКА РАЗВАЛА СХОЖДЕНИЯ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="serveces-3line">
+                    <div class="services-block-body">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/Кузовной ремонт картинка.svg"
+                                style="width: 160px; height: 160px;">
+                            <span class="services-text">КУЗОВНОЙ РЕМОНТ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-inspection">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/техосмотр.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">ТЕХОСМОТР, ДИАГНОСТИЧЕСКАЯ КАРТА</span>
+                        </div>
+                    </div>
+                    <div class="services-block-conditioner">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/кондей.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">ЗАПРАВКА АВТОКОНДИЦИОНЕРА</span>
+                        </div>
+                    </div>
+                    <div class="services-block-maintenance">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/ТО.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ - ПЛАНОВОЕ ТО</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="serveces-4line">
+                    <div class="services-block-tuning">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/Group.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">ЧИП - ТЮНИНГ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-detailing">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/полировка.svg" style="width: 160px; height: 160px;">
+                            <span class="services-text">ДЕТЕЙЛИНГ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-manual">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/ручное управление.svg"
+                                style="width: 160px; height: 160px;">
+                            <span class="services-text">МОНТАЖ РУЧНОГО УПРАВЛЕНИЯ ДЛЯ ИНВАЛИДОВ</span>
+                        </div>
+                    </div>
+                    <div class="services-block-tire">
+                        <div class="services-block-container">
+                            <img class="services-ikons" src="images/шиномонтаж.svg"
+                                style="width: 160px; height: 160px;">
+                            <span class="services-text">ШИНОМОНТАЖ</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer id="footerid">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo-left">АВТО</span>
+                <span class="footer-logo-right">СЕРВИС</span>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle-top">
+                    <a href="+7 (917) 736-66-94"><img src="images/phone.png"></a>
+                    <span class="footer-middle-text">+7 (917) 736-66-94</span>
+                </div>
+                <div class="footer-middle-bot">
+                    <a href="https://yandex.ru/maps/172/ufa/house/kavkazskaya_ulitsa_6_10/YUwYfwBoS0MCQFtufXtxcnRkbQ==/?ll=55.978266%2C54.703879&z=17.14"
+                        class="map"><img src="images/map.png"></a>
+                    <span class="footer-middle-text">ул. Кавказская, 6/10</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span class="footer-right-text">ПОДПИСЫВАЙСЯ НА НАС</span>
+                <div class="footer-right-bot">
+                    <img src="images/inst.png">
+                    <img src="images/vk.png">
+                    <img src="images/telegram.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-authorization">
+        <div class="modal-authorization-container">
+            <div class="main-head-block">
+                <span class="main-head-text">Вход</span>
+                <div class="main-head-hr-top"></div>
+                <div class="main-head-hr-bot"></div>
+            </div>
+            <input type="email" class="modal-authorization-email" id="modal-authorization-input" placeholder="Почта:">
+            <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                placeholder="Пароль:">
+            <input type="checkbox" class="modal-authorization-checkbox">
+            <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+            <button class="modal-authorization-log-in">Войти</button>
+            <button class="modal-authorization-create-account">Регистрация</button>
+            <a class="forgot-your-password" href="">Забыли пароль?</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="Modal_entrance.js"></script>
+</body>
+
+</html>

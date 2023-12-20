@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинети</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Inter&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg_gon" id="bg_fon_reg">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Регистрация</h2>
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <input class="registration_password" type="password" name="" id="" placeholder="Пароль">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="modal-authorization" class="modal-authorization">
+            <div class="modal-authorization-container">
+                <span class="modal-authorization-head">Вход</span>
+                <input type="email" class="modal-authorization-email" id="modal-authorization-input"
+                    placeholder="Почта:">
+                <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                    placeholder="Пароль:">
+                <input type="checkbox" class="modal-authorization-checkbox">
+                <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+                <button onclick="close_modal_entrance()">НАЖМИ НА меня</button>
+                <button class="modal-authorization-log-in">Войти</button>
+                <button onclick="removee()" class="modal-authorization-create-account">Регистрация</button>
+                <a class="forgot-your-password" href="">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="header">
+            <div>
+                <span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>
+            </div>
+            <div class="header-right">
+                    <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">СЕРВИСЫ</button>
+                    <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">КОНТАКТЫ</button>
+                    <a href="../Личный кабинет/index.html"><img src="Group.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-head-block">
+            <span class="main-head-text">Личный кабинет</span>
+            <div class="main-head-hr-top"></div>
+            <div class="main-head-hr-bot"></div>
+        </div>
+        <div class="main-container">
+            <div class="main-container-left">
+                <div class="main-container-left-profile">
+                    <span class="main-container-left-text">Мой профиль</span>
+                </div>
+                <div class="main-container-left-cars">
+                    <span class="main-container-left-text">Автомобили</span>
+                </div>
+                <div class="main-container-left-history">
+                    <span class="main-container-left-text">История записей</span>
+                </div>
+                <div class="main-container-left-password">
+                    <span class="main-container-left-text">Изменить пароль</span>
+                </div>
+            </div>
+            <div class="main-container-right-block">
+                <span class="main-container-right-head">Личная информация</span>
+                <div class="main-container-right">
+                    <div class="main-container-right-left">
+                        <img src="images/profile.png" alt="" class="main-container-right-profile-img">
+                        <button class="main-container-right-profile-button">Изменить фотографию</button>
+                    </div>
+                    <div class="main-container-right-right">
+                        <span class="main-container-right-right-id">ID: #42892</span>
+                        <input type="text" class="main-container-right-right-name" id="modal-authorization-input" placeholder="Имя:">
+                        <input type="text" class="main-container-right-right-last-name" id="modal-authorization-input" placeholder="Фамилия:">
+                        <input type="phone" class="main-container-right-right-phone" id="modal-authorization-input" placeholder="Телефон:">
+                        <input type="email" class="main-container-right-right-email" id="modal-authorization-input" placeholder="Почта:">
+                        <a href="../../Главная/index.html"><button class="main-container-right-right-exit">Выйти</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footerid">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo-left">АВТО</span>
+                <span class="footer-logo-right">СЕРВИС</span>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle-top">
+                    <a href="+7 (917) 736-66-94"><img src="images/phone.png"></a>
+                    <span class="footer-middle-text">+7 (917) 736-66-94</span>
+                </div>
+                <div class="footer-middle-bot">
+                    <a href="https://yandex.ru/maps/172/ufa/house/kavkazskaya_ulitsa_6_10/YUwYfwBoS0MCQFtufXtxcnRkbQ==/?ll=55.978266%2C54.703879&z=17.14" class="map"><img src="images/map.png"></a>
+                    <span class="footer-middle-text">ул. Кавказская, 6/10</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span class="footer-right-text">ПОДПИСЫВАЙСЯ НА НАС</span>
+                <div class="footer-right-bot">
+                    <img src="images/inst.png">
+                    <img src="images/vk.png">
+                    <img src="images/telegram.png">
+                </div>
+            </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+      <script src="Modal_entrance.js"></script>
+</body>
+</html>

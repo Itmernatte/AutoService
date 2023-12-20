@@ -1,0 +1,352 @@
+body{
+    margin: 0 auto;
+    background: #999999;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: rgba(70, 70, 70, 0.8);
+    border-bottom: 5px solid #9C0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-right{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-logo-left{
+    color: #EA1D1D;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-logo-right{
+    color: #CCC;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-buts-right{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: none;
+    border: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.header-buts-right:hover{
+    color: #9C0000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: none;
+    border: none;
+}
+
+.header-buts-right-cab{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 13.035px;
+    background: #9C0000;
+    width: 180px;
+    height: 45px;
+    transition: 0.25s;
+    cursor: pointer;
+    border: none;
+}
+.header-buts-right-cab:hover{
+    color: #464646;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 13.035px;
+    background: #9C0000;
+    width: 180px;
+    height: 45px;
+}
+
+main{
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-container{
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-promo-1{
+    width: 1100px;
+    height: 465px;
+    background-image: url('images/promo-1.png');
+    display: flex;
+    align-items: center;
+}
+
+.main-promo-2{
+    width: 1100px;
+    height: 465px;
+    background-image: url('images/promo-2.png');
+    display: flex;
+    align-items: center;
+}
+
+.main-promo-3{
+    width: 1100px;
+    height: 465px;
+    background-image: url('images/promo-3.png');
+    display: flex;
+    align-items: center;
+}
+
+.main-promo-4{
+    width: 1100px;
+    height: 465px;
+    background-image: url('images/promo-4.png');
+    display: flex;
+    align-items: center;
+}
+
+.main-head-block{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-head-text{
+    color: #333;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+.main-head-hr-top{
+    width: 250px;
+    height: 5px;
+    background: #333;
+}
+
+.main-head-hr-bot{
+    width: 130px;
+    height: 5px;
+    background: #333;
+}
+
+.main-promo-block{
+    width: 567.38px;
+    height: 430.166px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 6.861px 6.861px 2.744px 0px rgba(0, 0, 0, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.main-promo-container{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.main-promo-head{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 21.954px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.443px; /* 125% */
+}
+
+.main-promo-text{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27.443px; /* 83.333% */
+    width: 400px;
+}
+
+.main-promo-date{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 21.954px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.443px; /* 125% */
+}
+
+.main-promo-comment{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 21.954px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.443px; /* 125% */
+}
+
+.main-promo-info-text{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 21.954px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27.443px; /* 125% */
+}
+
+.main-promo-phone{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32.931px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer{
+    width: 100%;
+    height: 350px;
+    background: #151515;
+    border-top:  5px solid #9C0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 90%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left{
+    width: 33%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-middle{
+    width: 33%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-right{
+    width: 33%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-middle-top{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.footer-middle-bot{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer-right-bot{
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+}
+
+.footer-logo-left{
+    color: #EA1D1D;
+    font-family: Raleway;
+    font-size: 34.76px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-logo-right{
+    color: #CCC;
+    font-family: Raleway;
+    font-size: 34.76px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer-middle-text{
+    color: #525252;
+    font-family: Inter;
+    font-size: 24.332px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.footer-right-text{
+    color: #525252;
+    font-family: Raleway;
+    font-size: 24.332px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
