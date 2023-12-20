@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Inter&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg_gon" id="bg_fon_reg">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Регистрация</h2>
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <input class="registration_password" type="password" name="" id="" placeholder="Пароль">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="modal-authorization" class="modal-authorization">
+            <div class="modal-authorization-container">
+                <span class="modal-authorization-head">Вход</span>
+                <input type="email" class="modal-authorization-email" id="modal-authorization-input"
+                    placeholder="Почта:">
+                <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                    placeholder="Пароль:">
+                <input type="checkbox" class="modal-authorization-checkbox">
+                <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+                <button onclick="close_modal_entrance()">НАЖМИ НА меня</button>
+                <button class="modal-authorization-log-in">Войти</button>
+                <button onclick="removee()" class="modal-authorization-create-account">Регистрация</button>
+                <a class="forgot-your-password" href="">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div>
+                <a href="../Главная/index.html" id="header-logo-left"><span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span></a>
+            </div>
+            <div class="header-right">
+                <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">СЕРВИСЫ</button>
+                <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">КОНТАКТЫ</button>
+                <button class="header-buts-right-cab" onclick="opena()"><img src="images/admin.png" alt="" class="header-buts-right-cab"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-head-block">
+            <span class="main-head-text">Управление заказами</span>
+            <div class="main-head-hr-top"></div>
+            <div class="main-head-hr-bot"></div>
+        </div>
+        <div class="container-head-buts">
+            <button class="container-head-buts-left">Удалить</button>
+            <button class="container-head-buts-right">Новая запись <a class="container-head-buts-right-edit">+</a></button>
+        </div>
+        <div class="container-main-items">
+            <div class="container-head">
+                <div class="container-head-id">
+                    <span class="container-head-text">ID пользователя</span>
+                </div>
+                <div class="container-head-user">
+                    <span class="container-head-text">Пользователь</span>
+                </div>
+                <div class="container-head-date">
+                    <span class="container-head-text">Дата</span>
+                </div>
+                <div class="container-head-auto">
+                    <span class="container-head-text">Авто</span>
+                </div>
+                <div class="container-head-services">
+                    <span class="container-head-text">Выбранные услуги</span>
+                </div>
+                <div class="container-head-master">
+                    <span class="container-head-text">Назначенный мастер</span>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+            <div class="container-main">
+                <div class="container-main-id">
+                    <div class="container-main-id-block">
+                    
+                        <span class="container-main-text">42892</span>
+                    </div>
+                </div>
+                <div class="container-main-user">
+                    <div class="container-main-user-block">
+                        <img src="images/main-id.png" alt="">
+                        <span class="container-main-text">Иванов Иван</span>
+                    </div>
+                </div>
+                <div class="container-main-date">
+                    <div class="container-main-date-block">
+                        <span class="container-main-text">11.11.2023</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+                <div class="container-main-auto">
+                    <div class="container-main-auto-block">
+                        <span class="container-main-text">Mazda 6</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-services">
+                    <div class="container-main-services-block">
+                        <span class="container-main-text">Детейлинг</span>
+                        <img src="images/main-comment.png" alt="" class="main-comment">
+                    </div>
+                </div>
+                <div class="container-main-master">
+                    <div class="container-main-master-block">
+                        <span class="container-main-text">Валерий Борисович</span>
+                        <img src="images/main-edit.png" alt="" class="main-edit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footerid">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo-left">АВТО</span>
+                <span class="footer-logo-right">СЕРВИС</span>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle-top">
+                    <img src="images/phone.png">
+                    <span class="footer-middle-text">+7 (917) 736-66-94</span>
+                </div>
+                <div class="footer-middle-bot">
+                    <a href="https://yandex.ru/maps/172/ufa/house/kavkazskaya_ulitsa_6_10/YUwYfwBoS0MCQFtufXtxcnRkbQ==/?ll=55.978266%2C54.703879&z=17.14" class="map"><img src="images/map.png"></a>
+                    <span class="footer-middle-text">ул. Кавказская, 6/10</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span class="footer-right-text">ПОДПИСЫВАЙСЯ НА НАС</span>
+                <div class="footer-right-bot">
+                    <img src="images/inst.png">
+                    <img src="images/vk.png">
+                    <img src="images/telegram.png">
+                </div>
+            </div>
+    </div>
+    </footer>
+    <script src="Modal_entrance.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Inter&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg_gon" id="bg_fon_reg">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Регистрация</h2>
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <input class="registration_password" type="password" name="" id="" placeholder="Пароль">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="modal-authorization" class="modal-authorization">
+            <div class="modal-authorization-container">
+                <span class="modal-authorization-head">Вход</span>
+                <input type="email" class="modal-authorization-email" id="modal-authorization-input"
+                    placeholder="Почта:">
+                <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                    placeholder="Пароль:">
+                <input type="checkbox" class="modal-authorization-checkbox">
+                <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+                <button onclick="close_modal_entrance()">НАЖМИ НА меня</button>
+                <button class="modal-authorization-log-in">Войти</button>
+                <button onclick="removee()" class="modal-authorization-create-account">Регистрация</button>
+                <a class="forgot-your-password" href="">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header">
+            <div>
+                <a href="../Главная/index.html"><span class="header-logo-left">АВТО</span><span
+                        class="header-logo-right">СЕРВИС</span></a>
+            </div>
+            <div class="header-right">
+                <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">СЕРВИСЫ</button>
+                <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">КОНТАКТЫ</button>
+                <button class="header-buts-right-cab" onclick="opena()">АВТОРИЗАЦИЯ</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-head-block">
+            <span class="main-head-text">Все акции</span>
+            <div class="main-head-hr-top"></div>
+            <div class="main-head-hr-bot"></div>
+        </div>
+
+        <div class="main-container">
+            <div class="main-promo-1">
+                <div class="main-promo-block">
+                    <div class="main-promo-container">
+                        <span class="main-promo-head">Акция месяца</span>
+                        <span class="main-promo-text">При заказе услуг кузовного ремонта — полировка фар в
+                            подарок!</span>
+                        <span class="main-promo-date">До 30 ноября 2023г.</span>
+                        <span class="main-promo-comment">Количество записей по акции – ограничено!</span>
+                        <div class="main-promo-info">
+                            <span class="main-promo-info-text">Подробности акции уточняйте у мастеров
+                                автотехцентра</span>
+                            <span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>
+                        </div>
+                        <span class="main-promo-phone">+7 (917) 736-66-94</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-promo-2">
+                <div class="main-promo-block">
+                    <div class="main-promo-container">
+                        <span class="main-promo-head">Акция месяца</span>
+                        <span class="main-promo-text">Бесплатная диагностика ходовой!</span>
+                        <span class="main-promo-date">Бессрочная акция!</span>
+                        <span class="main-promo-comment">Акция действительна при наличии наклейки «<span
+                                class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>» либо
+                            при последующем ремонте ходовой части автомобиля.</span>
+                        <div class="main-promo-info">
+                            <span class="main-promo-info-text">Подробности акции уточняйте у мастеров
+                                автотехцентра</span>
+                            <span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>
+                        </div>
+                        <span class="main-promo-phone">+7 (917) 736-66-94</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-promo-3">
+                <div class="main-promo-block">
+                    <div class="main-promo-container">
+                        <span class="main-promo-head">Акция месяца</span>
+                        <span class="main-promo-text">Бесплатная компьютерная диагностика!</span>
+                        <span class="main-promo-date">До 31 декабря 2023г.</span>
+                        <span class="main-promo-comment">Количество записей по акции – ограничено! Запишитесь на
+                            чип-тюнинг и получите
+                            бесплатную компьютерную диагностику</span>
+                        <div class="main-promo-info">
+                            <span class="main-promo-info-text">Подробности акции уточняйте у мастеров
+                                автотехцентра</span>
+                            <span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>
+                        </div>
+                        <span class="main-promo-phone">+7 (917) 736-66-94</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-promo-4">
+                <div class="main-promo-block">
+                    <div class="main-promo-container">
+                        <span class="main-promo-head">Акция месяца</span>
+                        <span class="main-promo-text">Бесплатная доставка авто в сервис!</span>
+                        <span class="main-promo-date">Бессрочная акция!</span>
+                        <span class="main-promo-comment">Ваш автомобиль не на ходу? Попал в аварию? Вышел из строя
+                            двигатель или коробка передач? Звоните нам и мы доставим машину на ремонт в наш сервис
+                            бесплатно!</span>
+                        <div class="main-promo-info">
+                            <span class="main-promo-info-text">Подробности акции уточняйте у мастеров
+                                автотехцентра</span>
+                            <span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>
+                        </div>
+                        <span class="main-promo-phone">+7 (917) 736-66-94</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footerid">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo-left">АВТО</span>
+                <span class="footer-logo-right">СЕРВИС</span>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle-top">
+                    <img src="images/phone.png">
+                    <span class="footer-middle-text">+7 (917) 736-66-94</span>
+                </div>
+                <div class="footer-middle-bot">
+                    <img src="images/map.png">
+                    <span class="footer-middle-text">ул. Кавказская, 6/10</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span class="footer-right-text">ПОДПИСЫВАЙСЯ НА НАС</span>
+                <div class="footer-right-bot">
+                    <img src="images/inst.png">
+                    <img src="images/vk.png">
+                    <img src="images/telegram.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-authorization">
+        <div class="modal-authorization-container">
+            <div class="main-head-block">
+                <span class="main-head-text">Вход</span>
+                <div class="main-head-hr-top"></div>
+                <div class="main-head-hr-bot"></div>
+            </div>
+            <input type="email" class="modal-authorization-email" id="modal-authorization-input" placeholder="Почта:">
+            <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                placeholder="Пароль:">
+            <input type="checkbox" class="modal-authorization-checkbox">
+            <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+            <button class="modal-authorization-log-in">Войти</button>
+            <button class="modal-authorization-create-account">Регистрация</button>
+            <a class="forgot-your-password" href="">Забыли пароль?</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="Modal_entrance.js"></script>
+</body>
+
+</html>

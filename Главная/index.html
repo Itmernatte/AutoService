@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосервис</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Inter&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&family=Open+Sans:ital,wght@0,800;1,500;1,800&family=Raleway:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="modal-services">
+        <div class="modal-services-container">
+            <div class="main-head-block">
+                <span class="main-head-text">Запись на услугу</span>
+                <div class="main-head-hr-top"></div>
+                <div class="main-head-hr-bot"></div>
+            </div>
+            <input type="date" class="modal-authorization-date" id="modal-authorization-input" placeholder="Дата:">
+            <input type="services" class="modal-authorization-services" id="modal-authorization-input" placeholder="Услуги:">
+            <input type="master" class="modal-authorization-master" id="modal-authorization-input" placeholder="Мастер:">
+            <button class="modal-services-log-in">Записаться</button>
+        </div>
+    </div> -->
+    <div class="bg_gon" id="bg_fon_reg">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Регистрация</h2>
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <input class="registration_password" type="password" name="" id="" placeholder="Пароль">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="modal-authorization" class="modal-authorization">
+            <div class="modal-authorization-container">
+                <span class="modal-authorization-head">Вход</span>
+                <input type="email" class="modal-authorization-email" id="modal-authorization-input_email"
+                    placeholder="Почта:">
+                <input type="password" class="modal-authorization-password" id="modal-authorization-input_password"
+                    placeholder="Пароль:">
+                <input type="checkbox" class="modal-authorization-checkbox">
+                <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+                <button onclick="close_modal_entrance()">Х</button>
+                <button onclick="checkLogin()" class="modal-authorization-log-in">Войти</button>
+                <button onclick="removee()" class="modal-authorization-create-account">Регистрация</button>
+                <a class="forgot-your-password" href="">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <header>
+            <div class="header">
+                <div>
+                    <span class="header-logo-left">АВТО</span><span class="header-logo-right">СЕРВИС</span>
+                </div>
+                <div class="header-right">
+                    <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">СЕРВИСЫ</button>
+                    <button class="header-buts-right" Id="scroll-buts" onclick="scrollToFooter()">КОНТАКТЫ</button>
+                    <button class="header-buts-right-cab" id="header-buts-right-cab"
+                        onclick="opena()">АВТОРИЗАЦИЯ</button>
+                </div>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="main-items">
+                <div class="main-top">
+                    <span class="main-head">РЕМОНТ<br>АВТОМОБИЛЕЙ ЛЮБОЙ<br>СЛОЖНОСТИ</span>
+                    <span class="main-text">Делать хорошо с первого раза, восстанавливать невосстановимые автомобили,
+                        соблюдать технологию, четко разграничивать зоны ответственности, идти в ногу со
+                        временем,устанавливать адекватные цены — наши Золотые правила.</span>
+                </div>
+                <div class="main-bottom">
+                    <input type="tel" class="main-number" id="main-input" placeholder="Номер телефона">
+                    <button class="main-number-but" id="main-but">Жду звонка!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="slider">
+        <div class="promo-left slide">
+            <div class="promo-left">
+                <div class="promo-left-main">
+                    <div class="promo-left-container">
+                        <div class="promo-left-text-top">
+                            <span class="promo-container-head-top">ПОЛИРОВКА</span>
+                            <span class="promo-container-head-bottom">ФАР</span>
+                            <span class="promo-container-text">Бесплатная полировка фар! Узнайте, как получить
+                                бесплатную полировку фар</span>
+                        </div>
+                        <button class="promo-container-but">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-middle slide">
+            <div class="promo-middle">
+                <div class="promo-middle-main">
+                    <div class="promo-middle-container">
+                        <div class="promo-middle-text-top">
+                            <span class="promo-container-head-top">КОМПЬЮТЕРНАЯ</span>
+                            <span class="promo-container-head-bottom">ДИАГНОСТИКА</span>
+                            <span class="promo-container-text">Диагностика от опытных мастеров по всем узлам вашего
+                                авто. Узнайте, как получить бесплатную компьютерную диагностику</span>
+                        </div>
+                        <button class="promo-container-but">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-right slide">
+            <div class="promo-right">
+                <div class="promo-right-main">
+                    <div class="promo-right-container">
+                        <div class="promo-right-text-top">
+                            <span class="promo-container-head-top">ДИАГНОСТИКА</span>
+                            <span class="promo-container-head-bottom">ХОДОВОЙ</span>
+                            <span class="promo-container-text">Диагностика ходовой части вашего авто БЕСПЛАТНО! Узнайте,
+                                как получить бесплатную диагностику ходовой</span>
+                        </div>
+                        <button class="promo-container-but">ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="features-top">
+            <div class="features-top-left"></div>
+            <div class="features-top-right">
+                <div class="features-container">
+                    <div class="features-container-titles">
+                        <span class="features-title-head">СЕРДЦЕ</span>
+                        <span class="features-title-bot">АВТОМОБИЛЯ</span>
+                    </div>
+                    <span class="features-text">Ваш двигатель - в надежных руках. <br>Ремонт двс любой сложности.
+                        <br>Только качественные запчасти для вашего двигателя. Узнайте про ремонт двс</span>
+                    <a href="../Акции/index.html"><button class="features-but">ПОДРОБНЕЕ</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="features-bot">
+            <div class="features-bot-left">
+                <div class="features-bot-left">
+                    <div class="features-container">
+                        <div class="features-container-titles">
+                            <span class="features-title-head">ИНТЕРЬЕР</span>
+                            <span class="features-title-bot">АВТОМОБИЛЯ</span>
+                        </div>
+                        <span class="features-text">Мы позаботимся о чистоте и комфорте салона автомобиля.
+                            Детейлинг-чистка всего интерьера вплоть до обивки салона, мелких деталей и электроники.
+                            <br>Узнайте подробнее про детейлинг</span>
+                        <a href="../Акции/index.html"><button class="features-but">ПОДРОБНЕЕ</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="features-bot-right"></div>
+        </div>
+    </div>
+    <div class="trust">
+        <div class="trust-container">
+            <span class="trust-head">Почему нам доверяют?</span>
+            <div class="trust-main">
+
+                <div class="trust-main-align-left">
+                    <div class="trust-main-align-left-left">
+                        <span class="trust-text-top">Длительная гарантия!</span>
+                        <span class="trust-text-bot">На все производимые работы гарантия 6 месяцев или 20 000 км
+                            пробега.</span>
+                    </div>
+                    <div class="trust-main-align-left-middle">
+                        <img src="images/trust-1.png">
+                    </div>
+                    <div class="trust-main-align-left-right"></div>
+                </div>
+
+                <div class="trust-main-align-right">
+                    <div class="trust-main-align-right-left"></div>
+                    <div class="trust-main-align-right-middle">
+                        <img src="images/trust-2.png">
+                    </div>
+                    <div class="trust-main-align-right-right">
+                        <span class="trust-text-top">Никаких сюрпризов!</span>
+                        <span class="trust-text-bot">Мы не проводим никаких дополнительных ремонтных работ без
+                            согласования с Вами.</span>
+                    </div>
+                </div>
+
+                <div class="trust-main-align-left">
+                    <div class="trust-main-align-left-left">
+                        <span class="trust-text-top">Полная прозрачность!</span>
+                        <span class="trust-text-bot">По вашему желанию мы проводим Вас в ремзону, чтобы вы могли лично
+                            наблюдать за процессом ремонта вашего авто.</span>
+                    </div>
+                    <div class="trust-main-align-left-middle">
+                        <img src="images/trust-3.png">
+                    </div>
+                    <div class="trust-main-align-left-right"></div>
+                </div>
+
+                <div class="trust-main-align-right">
+                    <div class="trust-main-align-right-left"></div>
+                    <div class="trust-main-align-right-middle">
+                        <img src="images/trust-4.png">
+                    </div>
+                    <div class="trust-main-align-right-right">
+                        <span class="trust-text-top">Неисправности - с первого раза!</span>
+                        <span class="trust-text-bot">Квалифицированный персонал при выдаче автомобиля позволяют нам
+                            устранить поломки на высшем уровне.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="demo-services">
+        <div class="demo-services-container">
+            <div class="demo-services-head">
+                <span class="demo-services-head-left">ВАШ АВТО,</span><span class="demo-services-head-right">НАШЕ
+                    ДЕЛО</span>
+            </div>
+            <div class="demo-services-main">
+                <div class="demo-services-main-left">
+                    <div class="demo-services-block">
+                        <img src="images/demo-services-1.png">
+                        <span class="demo-services-text">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ - ПЛАНОВОЕ ТО</span>
+                    </div>
+                    <div class="demo-services-block">
+                        <img src="images/demo-services-3.png">
+                        <span class="demo-services-text">КУЗОВНОЙ РЕМОНТ</span>
+                    </div>
+                </div>
+                <div class="demo-services-main-right">
+                    <div class="demo-services-block">
+                        <img src="images/demo-services-2.png">
+                        <span class="demo-services-text">ТЕХОСМОТР,
+                            ДИАГНОСТИЧЕСКАЯ КАРТА</span>
+                    </div>
+                    <div class="demo-services-block">
+                        <img src="images/demo-services-4.png">
+                        <span class="demo-services-text">РЕМОНТ ХОДОВОЙ</span>
+                    </div>
+                </div>
+            </div>
+            <a href="../Услуги/index.html"><button class="features-but">ПОДРОБНЕЕ</button></a>
+        </div>
+    </div>
+    <footer id="footerid">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo-left">АВТО</span>
+                <span class="footer-logo-right">СЕРВИС</span>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle-top">
+                    <img src="images/phone.png">
+                    <span class="footer-middle-text">+7 (917) 736-66-94</span>
+                </div>
+                <div class="footer-middle-bot">
+                    <a href="https://yandex.ru/maps/172/ufa/house/kavkazskaya_ulitsa_6_10/YUwYfwBoS0MCQFtufXtxcnRkbQ==/?ll=55.978266%2C54.703879&z=17.14"
+                        class="map"><img src="images/map.png"></a>
+                    <span class="footer-middle-text">ул. Кавказская, 6/10</span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <span class="footer-right-text">ПОДПИСЫВАЙСЯ НА НАС</span>
+                <div class="footer-right-bot">
+                    <img src="images/inst.png">
+                    <img src="images/vk.png">
+                    <img src="images/telegram.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-authorization">
+        <div class="modal-authorization-container">
+            <div class="main-head-block">
+                <span class="main-head-text">Вход</span>
+                <div class="main-head-hr-top"></div>
+                <div class="main-head-hr-bot"></div>
+            </div>
+            <input type="email" class="modal-authorization-email" id="modal-authorization-input" placeholder="Почта:">
+            <input type="password" class="modal-authorization-password" id="modal-authorization-input"
+                placeholder="Пароль:">
+            <input type="checkbox" class="modal-authorization-checkbox">
+            <span class="modal-authorization-checkbox-text">Запомнить меня</span>
+            <button class="modal-authorization-log-in">Войти</button>
+            <button class="modal-authorization-create-account">Регистрация</button>
+            <a class="forgot-your-password" href="">Забыли пароль?</a>
+        </div>
+    </div>
+    <script src="Modal_entrance.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
